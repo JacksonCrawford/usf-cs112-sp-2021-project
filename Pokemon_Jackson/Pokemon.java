@@ -93,4 +93,4 @@ public class Pokemon implements Comparable<Pokemon> {
   
 }
 
-
+# Hi this is Ryan. Thanks for the help!
