@@ -37,9 +37,8 @@ public class KNNPredictor extends Predictor {
 			// For Loop that starts at the first value of survived column
 			for(int i=7;i<values.size();i+=6) {
 				// Checks if survived is 1 or 0, and adds a bool true for 1, false for 0 to labels
-				if(values.get(i-1) == "1") { labels.add(true);
-				} else if(values.get(i-1) == "0") { System.out.println("banana");
-					} else { labels.add(false); System.out.println(values.get(i-1)); }
+				if(Integer.parseInt(values.get(i-1)) == 1) { labels.add(true);
+					} else { labels.add(false); }
 				// Adds age to ages, 0.0 if age is empty
 				try { ages.add(Double.valueOf(values.get(i+3)));
 					} catch(NumberFormatException nfe) { ages.add(0.0); }
@@ -68,7 +67,6 @@ public class KNNPredictor extends Predictor {
 					alive++;
 				} else {
 					point.setLabel(false);
-//					System.out.println(point.getLabel());
 					notAlive++;
 				}
 				counter++;
