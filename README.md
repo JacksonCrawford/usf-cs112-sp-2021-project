@@ -3,14 +3,15 @@ USF CS112 Project (Spring 2021)
 
 ### DataAnalytics
 
-##### part1
+#### part1
 
 Creating class structure for future use
 
-##### knn
+#### knn
 
 Implement KNN predictor
 
+***
 
 ### Pokemon Jackson
 
